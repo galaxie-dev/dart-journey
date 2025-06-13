@@ -26,11 +26,13 @@
 // }
 
 
+
+//Abstract Class and Inheritance
 abstract class Player{
   void enterField(); //abstract method
 
   void kickBall(){    //concrete method
-    print("He has kicked the ball");
+    print("He has kicked the ball high");
   }
 
   gender();
@@ -39,7 +41,7 @@ abstract class Player{
 class Evans extends Player{
   @override
   void enterField() {
-    print("Evans has entered the field");
+    print("Evans has entered the field running");
   }
 
   @override
@@ -51,7 +53,7 @@ class Evans extends Player{
 class mark extends Player{
   @override
   void enterField() {
-    print("Mark has entered the field");
+    print("Mark has entered the field walking");
   }
     @override
      gender(){
@@ -64,6 +66,7 @@ void main() {
   Player markkk = mark();
 
   evans.enterField();
+  markkk.enterField();
   evans.kickBall();
 
   
