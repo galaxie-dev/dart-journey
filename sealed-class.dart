@@ -24,3 +24,10 @@ class Dog implements Animal {
 class Cat implements Animal {
 
 }
+
+
+
+// added in dart 3
+interface class Animal3{} // can only be implemented
+base class Animal2 {} // can only be extended
+mixin class Animal4{} // mixing plus class
