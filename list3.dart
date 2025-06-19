@@ -22,13 +22,7 @@ void main() {
   print(players);
 
 
-  // Task
-  // 1. create new empty list of students
-  // 2. run a for 
-  // 3. check if grade of 1 student is greater than 60
-  // 4. if true add student to the new list
-  // 5. Print the list out of the loop
-
+ 
 
 }
 
