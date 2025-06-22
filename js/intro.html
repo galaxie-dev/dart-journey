@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #remotetext{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>Welcome to JS</h3>
+    <p id="remotetext">Data from my file, Evans</p>
+    <label for="totalamount">Total amount</label>
+    <input type="number" name="" id="totalamount"><br>
+    <button id="calculatevat">Calculate VAT</button><br>
+
+    <label for="vatamount" id="vatamount">0.00</label>
+</body>
+<script>
+    // document.querySelector("#remotetext").innerText="Davide Fratessi"
+    // document.querySelector("#remotetext").innerHTML="Davide Fratessi of inner HTML"
+
+    // var popup="Just a pop up bro"
+    // window.alert(popup)
+
+    //  const tax = 0.16*100
+    //  console.log("The tax is: ", tax)
+
+     //variables (var, let, const)
+    //  var x = 10
+    //  y = 2 * x
+    //  console.log("Ans:" ,y)
+
+
+    // declare
+
+
+    const calculatebtn=document.getElementById("calculatevat"),
+    totalamount=document.getElementById("vatamount")
+
+
+    calculatebtn.addEventListener("click", function(){
+        calculatevat()
+    })
+
+    function calculatevat() {
+        const enteredvalue=document.getElementById("totalamount").value
+        console.log("Total amount", enteredvalue)
+
+        const vatrate = 16
+        let vatamount = enteredvalue*16/100
+
+        totalamount.innerHTML=("Toatal amount is: "+vatamount)
+    }
+
+</script>
+</html>
